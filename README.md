@@ -27,4 +27,4 @@ If you use this benchmark in your research, please cite our paper:
       primaryClass={cs.CL},
       url={https://arxiv.org/abs/2503.04800}, 
 }
-```]
+```
