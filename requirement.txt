@@ -1,0 +1,13 @@
+huggingface-hub
+openai
+sentence_transformers
+torch
+transformers
+langchain
+langchain-community
+langchain-openai
+pyyaml
+diff_match_patch
+spacy
+nltk
+wikiextractor

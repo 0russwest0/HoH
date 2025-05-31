@@ -1,0 +1,34 @@
+# Model settings
+model:
+  path: "./model/Qwen2.5-0.5B"
+  cuda_devices: "0"
+  batch_size: 8
+
+# Data paths
+data:
+  raw_old_data_path: "../data/enwiki/enwiki-20241101"
+  raw_new_data_path: "../data/enwiki/enwiki-20241201"
+  old_wiki_path: "../data/enwiki/enwiki-20241101_cleaned"
+  new_wiki_path: "../data/enwiki/enwiki-20241201_cleaned"
+  diff_path: "../data/diff/diff_241101_241201.jsonl"
+  filtered_diff_path: "../data/diff/diff_241101_241201_filtered.jsonl"
+  final_diff_path: "../data/diff/diff_241101_241201_final.jsonl"
+
+# Processing settings
+processing:
+  min_text_length: 200
+  sentence_tokenizer: "nltk"  
+  word_list: ['a', 'an']
+  special_diffs_path: "special_diffs.json"
+  skip_list: 
+    - "he"
+    - "she"
+    - "it"
+    - "they"
+    - "them"
+    - "her"
+    - "his"
+    - "their"
+    - "our"
+    - "my"
+    - "your" 
